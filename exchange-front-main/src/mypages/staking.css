@@ -1,0 +1,83 @@
+body{
+    background-color: #110d36;;
+  }
+  .accord{
+    border:1px solid skyblue;
+  }
+.accordion-button {
+    position: relative;
+    align-items: stretch;
+    flex-direction: column;
+    width: 100%;
+    padding: 2rem 1.25rem;
+    font-size: 1rem;
+    color: #cfcfcf;
+    text-align: left;
+    /* background-color: rgb(23,40,100) !important; */
+    border: 0;
+    border-radius: 0;
+    overflow-anchor: none;
+    background-color: #18134d;
+
+}
+.accordion-item{
+    background-image: linear-gradient( #da2eef 7.97%, #2b6aff 49.17%, #39d0d8 92.1%);
+}
+
+.accordion-button:not(.collapsed) {
+    color: #cfcfcf;
+    background-color: #18134d;
+    box-shadow: inset 0 -1px 0 rgb(0 0 0 / 13%);
+}
+.box{
+    border:1px solid black;
+    padding:25px 10px;
+    border-radius:20px;
+    color:#cfcfcf;
+    border:1px solid rgb(171, 196, 255);
+    background-color: #273370;
+
+}
+
+.accordion-body{
+    background-color: #232B64 !important;
+}
+.box span{
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.wallet-btn{
+    
+    color: #3bd0d8;
+    border-color:rgba(59,208,216,.1) ;
+    background-color: rgba(59,208,216,.2);
+    border-radius: 10px;
+    padding:10px 20px;
+    font-weight:bold;
+}
+.stakingBtn{
+    padding: 35px !important;
+}
+@media screen and (max-width:768px){
+    .rayhead{
+        padding-top: 10px;
+        padding-bottom: 15px;
+        text-align: center;
+    }
+    .raycontent{
+        padding-top:15px ;
+        padding-bottom:15px ;
+    }
+}
+@media screen and (max-width:480px){
+    .rayhead{
+        padding-top: 10px;
+        padding-bottom: 15px;
+        text-align: center;
+    }
+    .raycontent{
+        padding-top:15px ;
+        padding-bottom:15px ;
+    }
+}

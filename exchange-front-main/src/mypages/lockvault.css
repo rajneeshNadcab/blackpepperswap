@@ -1,0 +1,78 @@
+body{
+    background-color: #110d36;;
+  }
+  .containerVault{
+    width:1400px
+}
+p{
+    margin-bottom:0px !important
+}
+  .opening{
+   /*  background-color: rgb(255, 205, 129); */
+   background-color: rgb(181 201 237 / 46%);;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px;
+    padding: 5px 29px;
+    
+}
+ .button button{
+   /*  background:#FD9537; */
+   background: linear-gradient(140.14deg,rgba(0,182,191,.15),rgba(27,22,89,.1) 86.61%),linear-gradient(321.82deg,#18134d,#1b1659);
+    border:none;
+    outline:none;
+    color:white;
+    font-size: 20px;
+    font-weight: 500 !important;
+    border-radius: 100px;
+    width: 210px;
+    margin: 10px auto;
+    height: 45px;
+   
+}
+.profit{
+    font-size:16px;
+}
+
+.claimBox{
+    background-color: #F5F5F5;
+    border-radius: 20px;
+    padding:10px 0px;
+    display:flex;
+    align-items:center;
+}
+
+.claimBox button{
+    border:none;
+    outline:none;
+   
+    border-radius:10px;
+    background-color:#ccc;
+    width:150px;
+    height:30px;
+    font-weight:600
+}
+.claimBtn{
+   display: flex;
+   justify-content: start;
+   align-items: center;
+   /* width: 100%; */
+   /* margin-top: 27px; */
+
+
+}
+
+.claimBtn button{
+    margin-left: 40px;
+    height: 40px;
+    border-radius: 20px;
+}
+.pudHead{
+    font-size: 18px;
+    padding: 10px 0;
+}
+.epudBottom{
+    font-size: 18px; 
+    padding: 10px 0;
+}
+
+
