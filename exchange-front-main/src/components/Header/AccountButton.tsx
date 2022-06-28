@@ -24,6 +24,7 @@ const AccountButton: React.FC<{}> = () => {
     window.localStorage.removeItem(CONNECTOR_STORAGE_ID)
     // unsetConnector()
   }, [])
+  const[showAlert,setShowAlert]=React.useState(false)
   const copy = () => {
     const input = document.createElement('input')
     input.setAttribute('readonly', 'readonly')
@@ -35,8 +36,10 @@ const AccountButton: React.FC<{}> = () => {
     // }
     navigator.clipboard.writeText(input.value).then(function() {
       console.log('Async: Copying to clipboard was successful!');
+      setShowAlert(true)
+      setTimeout(()=>{setShowAlert(false)},1500)
     }, function(err) {
-      console.error('Async: Could not copy text: ', err);
+      console.error('Text cannot be copied!', err);
     });
     document.body.removeChild(input)
   }
@@ -57,15 +60,16 @@ const AccountButton: React.FC<{}> = () => {
           </AccountInner>
           <Modal className="modal">
             <Content>
-              <div className="title">{i18n(758, 'your wallet')}</div>
+              <div className="title">{i18n(758, 'your wallet')}  {showAlert && <span style={{color:"blue",paddingLeft:"30px"}}>Copied!</span>}</div>
               <div className="subtitle">
                 <span>{shortenAddress(account)}</span>
                 <img src={copyIcon} alt="" onClick={copy} style={{cursor:"pointer"}} />
+              
               </div>
             </Content>
             <Content>
               <div className="title">
-                <TranslatedText translationId={226}>Your Pudding Balance</TranslatedText>
+                <TranslatedText translationId={226}>Your Balance</TranslatedText>
               </div>
               <div className="money">{getBalanceNumber(sushiBalance)}</div>
               <div className="title usdt">=${getBalanceNumber(sushiBalance) * pippiPrice}</div>
