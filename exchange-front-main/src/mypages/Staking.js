@@ -56,7 +56,7 @@ export default function Staking() {
                     <h4 style={{fontSize:"15px", fontWeight:"700", paddingBottom:"10px",color:"#657AB5"}}>Total Staked</h4>
                     <p style={{color:"rgb(171, 196, 255)",fontWeight:"500"}}>$14,722,275</p>
                 </div>
-                <div className="col-md-1 col-12 d-flex justify-content-end"> {arrow ?<MdArrowDropUp style={{fontSize:"30px", color:" rgb(171, 196, 255)"}}/>:<MdArrowDropDown style={{fontSize:"30px", color:" rgb(171, 196, 255)"}}/>}</div>
+                <div className="col-md-1 col-12 d-flex justify-content-end"> {arrow ?<MdArrowDropUp style={{fontSize:"30px", color:" white"}}/>:<MdArrowDropDown style={{fontSize:"30px", color:"white"}}/>}</div>
                </div>
     </button>
             </h2>

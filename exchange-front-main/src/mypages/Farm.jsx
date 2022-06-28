@@ -227,9 +227,9 @@ export default function Farm() {
                                   </div>
                                   <div className="col-md-1 col-12 col-12 d-flex justify-content-end up-down">
                                     {arrowToggle && ind == index ? (
-                                      <MdArrowDropUp style={{ fontSize: '30px', color: ' rgb(171, 196, 255)' }} />
+                                      <MdArrowDropUp style={{ fontSize: '30px', color: ' white' }} />
                                     ) : (
-                                      <MdArrowDropDown style={{ fontSize: '30px', color: ' rgb(171, 196, 255)' }} />
+                                      <MdArrowDropDown style={{ fontSize: '30px', color: ' white' }} />
                                     )}
                                   </div>
                                 </div>
