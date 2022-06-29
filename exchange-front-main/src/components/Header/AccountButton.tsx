@@ -21,6 +21,7 @@ const AccountButton: React.FC<{}> = () => {
   const sushiBalance = useTokenBalance(getPipiAddress() as any)
   const toggleWalletModal = useWalletModalToggle()
   const handleSignOutClick = useCallback(() => {
+    
     window.localStorage.removeItem(CONNECTOR_STORAGE_ID)
     // unsetConnector()
   }, [])
@@ -73,8 +74,8 @@ const AccountButton: React.FC<{}> = () => {
               </div>
               <div className="money">{getBalanceNumber(sushiBalance)}</div>
               <div className="title usdt">=${getBalanceNumber(sushiBalance) * pippiPrice}</div>
-              <Link href={`https://www.hooscan.com/address/address=${account}`}>
-                <TranslatedText translationId={250}>View on HscScan</TranslatedText>
+              <Link href={`https://explorer.bdltscan.io/address/${account}`}>
+                <TranslatedText translationId={250}>View on BDLTScan</TranslatedText>
               </Link>
             </Content>
             <div className="flex">

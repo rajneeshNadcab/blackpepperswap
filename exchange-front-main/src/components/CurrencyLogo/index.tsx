@@ -41,6 +41,7 @@ export default function CurrencyLogo({
       if (currency instanceof WrappedTokenInfo) {
         return [...uriLocations, getTokenLogoURL(currency.address)]
       }
+console.log(getTokenLogoURL(currency.address),"getTokenLogoURL(currency.address)");
 
       return [getTokenLogoURL(currency.address)]
     }

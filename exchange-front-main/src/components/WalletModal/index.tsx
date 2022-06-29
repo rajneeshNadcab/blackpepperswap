@@ -249,7 +249,7 @@ export default function WalletModal({
           return null
         }
       }
-
+     console.log("checking testttt::",SUPPORTED_WALLETS, WALLET_VIEWS)
       // return rest of options
       return (
         !isMobile &&
@@ -285,7 +285,7 @@ export default function WalletModal({
           <ContentWrapper>
             {error instanceof UnsupportedChainIdError ? (
               <h5>
-                Please connect to Hoo Chain network.
+                Please connect to BDLT Chain network.
               </h5>
             ) : (
               'Error connecting. Try refreshing the page.'

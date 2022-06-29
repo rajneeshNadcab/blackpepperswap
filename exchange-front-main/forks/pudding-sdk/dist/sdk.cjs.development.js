@@ -20,8 +20,8 @@ var IPancakePair = _interopDefault(require('@pancakeswap-libs/pancake-swap-core/
 var _SOLIDITY_TYPE_MAXIMA;
 
 (function (ChainId) {
-  ChainId[ChainId["MAINNET"] = 70] = "MAINNET";
-  ChainId[ChainId["TESTNET"] = 170] = "TESTNET";
+  ChainId[ChainId["MAINNET"] = 53556] = "MAINNET";
+  ChainId[ChainId["TESTNET"] = 53555] = "TESTNET";
 })(exports.ChainId || (exports.ChainId = {}));
 
 (function (TradeType) {
@@ -35,8 +35,8 @@ var _SOLIDITY_TYPE_MAXIMA;
   Rounding[Rounding["ROUND_UP"] = 2] = "ROUND_UP";
 })(exports.Rounding || (exports.Rounding = {}));
 
-var FACTORY_ADDRESS = '0x6168D508ad65D87f8F5916986B55d134Af7153bb';
-var INIT_CODE_HASH = '0x80bd44b36fff03b8bb0913a44b51ae0e27c1d42bc4a5dd86a7c9a6a714739241';
+var FACTORY_ADDRESS = '0x190f15AA26d6Eb5293073301b66dBfAc197A9b8C';
+var INIT_CODE_HASH = '0x53553282adaa5142f7a163030077b27f8b3d23a21549d25e1f682459e4cdaeff';
 var MINIMUM_LIQUIDITY = /*#__PURE__*/JSBI.BigInt(1000); // exports for internal consumption
 
 var ZERO = /*#__PURE__*/JSBI.BigInt(0);
@@ -369,7 +369,7 @@ function Currency(decimals, symbol, name) {
  * The only instance of the base class `Currency`.
  */
 
-Currency.ETHER = /*#__PURE__*/new Currency(18, 'HOO', 'HOO');
+Currency.ETHER = /*#__PURE__*/new Currency(18, 'BDLT', 'BDLT');
 var ETHER = Currency.ETHER;
 
 var _WETH;
@@ -435,7 +435,7 @@ function currencyEquals(currencyA, currencyB) {
     return currencyA === currencyB;
   }
 }
-var WETH = (_WETH = {}, _WETH[exports.ChainId.MAINNET] = /*#__PURE__*/new Token(exports.ChainId.MAINNET, '0x3EFF9D389D13D6352bfB498BCF616EF9b1BEaC87', 18, 'WHOO', 'Wrapped HOO'), _WETH[exports.ChainId.TESTNET] = /*#__PURE__*/new Token(exports.ChainId.TESTNET, '0xffB7F4F03F999dCc9C44cb8EED028C1f559cabC3', 18, 'WHOO', 'Wrapped HOO'), _WETH);
+var WETH = (_WETH = {}, _WETH[exports.ChainId.MAINNET] = /*#__PURE__*/new Token(exports.ChainId.MAINNET, '0x77cC02541e85F57F9C2822c6192389c44F11b638', 18, 'WBDLT', 'Wrapped BDLT'), _WETH[exports.ChainId.TESTNET] = /*#__PURE__*/new Token(exports.ChainId.TESTNET, '0xffB7F4F03F999dCc9C44cb8EED028C1f559cabC3', 18, 'WBDLT', 'Wrapped BDLT'), _WETH);
 
 var _toSignificantRoundin, _toFixedRounding;
 var Decimal = /*#__PURE__*/toFormat(_Decimal);
